@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AT - Portfolio</title>
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="main.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- JavaScript -->
+    <script defer src="app.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <!-- Logo -->
+            <h2 class="navbar__logo">&lt;AT &gt;</h2>
+
+            <!-- Hamburger menu -->
+            <div class="hamburger-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <!-- Links -->
+            <div class="links-wrapper">
+                <ul id="navbar" class="primary-items">
+                    <li class="navbar-item"><a id="aboutLink" href="#">About</a></li>
+                    <li class="navbar-item"><a id="workLink" href="#">Work</a></li>
+                    <li class="navbar-item"><a id="testimonialsLink" href="#">Testimonials</a></li>
+                    <li class="navbar-item"><a id="contactLink" href="#">Contact</a></li>
+                </ul>
+
+                <div class="links-separator"></div>
+
+                <div class="action-buttons">
+                    <div class="light-mode">
+                        <i class="fas fa-moon"></i>
+                    </div>
+                    <button class="btn-cta">Download CV</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <main class="section hero">
+        <div class="hero-container">
+            <div class="hero-img-wrapper">
+                <img class="hero-avatar" src="./img/branding/pp.jpg" alt="Adrian Thoenig picture" />
+                <div class="hero-img-frame"></div>
+            </div>
+
+            <div class="hero-content">
+                <div class="hero-info">
+                    <h1 class="hero-title">Hi, I'm Adrian <span class="hi-hand">👋</span></h1>
+                    <p class="hero-para">
+                        I'm a junior developer (React.js & PHP) building this as a test portfolio to showcase my skills and projects. Even though I'm just starting out, I enjoy creating web applications that are fast, accessible, visually appealing, and responsive, and I approach every project with the same excitement as if it were my first.
+                    </p>
+                </div>
+
+                <div class="hero-status">
+                    <div class="hero-status__location">
+                        <i class="fas fa-location-dot"></i>
+                        <span class="location-place">Barcelona, Spain</span>
+                    </div>
+                    <div class="hero-status__switch">
+                        <div class="on-switch"></div>
+                        <span class="switch-message">Available for new projects</span>
+                    </div>
+                </div>
+
+                <ul class="hero-socials">
+                    <li class="hero-socials__social">
+                        <a class="social-platform" href="https://github.com/adrianthoenig/" target="_blank"><i class="fab fa-github"></i></a>
+                    </li>
+                    <li class="hero-socials__social">
+                        <a class="social-platform" href="https://instagram.com/at.unlocked/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li class="hero-socials__social">
+                        <a class="social-platform" href="https://www.figma.com/@adrianthoenig" target="_blank"><i class="fab fa-figma"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <!-- ABOUT ME -->
+    <section id="about" class="section about">
+        <div class="about-container">
+            <div class="tag">
+                <p class="tag__text">
+                    About me
+                </p>
+            </div>
+            <div class="about-content">
+                <div class="about-img-wrapper">
+                    <img src="./img/about/about-pic.jpg" alt="Adrian Thoenig">
+                </div>
+
+                <div class="about-info">
+                    <h2 class="about-title">
+                        Curious about me? Here you have it:
+                    </h2>
+                    <div class="about-body">
+                        <p class="about-body-para">
+                        I'm Adrian Thoenig, a 21-year-old from Barcelona documenting my process of landing a developer job on a personal account. I am currently studying DAW (the FP) while exploring the world of programming. Frontend, backend, and writing clean, readable, efficient code matters a lot to me.
+                        </p>
+                        <p class="about-body-para">
+                            I began my journey as a web enthusiast recently, and since then, I've been growing and learning new skills, taking on challenges and practicing modern technologies. Now, in my early twenties, I'm sharing my learning process publicly, experimenting with projects, code snippets, and development tools.
+                        </p>
+                        <p class="about-body-para">
+                            I am very much a curious learner and enjoy working on projects end to end, from planning all the way to coding.
+                        </p>
+                        <p class="about-body-para">
+                            When I'm not coding or studying, you can find me documenting my progress on social media, following tech communities, or enjoying some free time. You can follow me on Twitter where I share learning bites and my coding journey, or on GitHub.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section skills">
+        <div class="skills-container">
+            <div class="skills-info">
+                <div class="tag">
+                    <p class="tag__text">Skills</p>
+                </div>
+                <p class="skills-para">
+                    The skills, tools and technologies I am really good at:
+                </p>
+            </div>
+
+            <div class="skills-icons">
+                <div class="skills-row">
+                    <div class="row__skill">
+                        <img class="skill_icon" src="./img/skills/icon-javscript.svg" alt="Javascript logo" />
+                        <p class="skill__title">Javascript</p>
+                    </div>
+
+                    <div class="row__skill">
+                        <img class="skill_icon" src="./img/skills/icon-typescript.svg" alt="Typescript logo" />
+                        <p class="skill__title">Typescript</p>
+                    </div>
+
+                    <div class="row__skill">
+                        <img class="skill_icon" src="./img/skills/icon-react.svg" alt="React logo" />
+                        <p class="skill__title">React</p>
+                    </div>
+
+                    <div class="row__skill">
+                        <img class="skill_icon" src="./img/skills/icon-nextjs.svg" alt="Next.js logo" />
+                        <p class="skill__title">Next.js</p>
+                    </div>
+
+                    <div class="row__skill">
+                        <img class="skill_icon" src="./img/skills/icon-nodejs.svg" alt="Node.js logo" />
+                        <p class="skill__title">Node.js</p>
+                    </div>
+
+                    <div class="row__skill">
+                        <img class="skill_icon" src="./img/skills/icon-express.svg" alt="Express.js logo" />
+                        <p class="skill__title">Express.js</p>
+                    </div>
+
+                    <div class="row__skill">
+                        <img class="skill_icon" src="./img/skills/icon-nest.svg" alt="Nest.js logo" />
+                        <p class="skill__title">Nest.js</p>
+                    </div>
+
+                    <div class="row__skill">
+                        <img class="skill_icon" src="./img/skills/icon-socket.svg" alt="Socket.io logo" />
+                        <p class="skill__title">Socket.io</p>
+                    </div>
+
+                    <div class="row__skill">
+                        <img class="skill_icon" src="./img/skills/icon-postgresql.svg" alt="PostgreSQL logo" />
+                        <p class="skill__title">PostgreSQL</p>
+                    </div>
+
+                    <div class="row__skill">
+                        <img class="skill_icon" src="./img/skills/icon-mongodb.svg" alt="MongoDB logo" />
+                        <p class="skill__title">MongoDB</p>
+                    </div>
+
+                    <div class="row__skill">
+                        <img class="skill_icon" src="./img/skills/icon-sass.svg" alt="Sass logo" />
+                        <p class="skill__title">Sass/Scss</p>
+                    </div>
+
+                    <div class="row__skill">
+                        <img class="skill_icon" src="./img/skills/icon-tailwindcss.svg" alt="TailwindCSS logo" />
+                        <p class="skill__title">TailwindCSS</p>
+                    </div>
+
+                    <div class="row__skill">
+                        <img class="skill_icon" src="./img/skills/icon-figma.svg" alt="Figma logo" />
+                        <p class="skill__title">Figma</p>
+                    </div>
+
+                    <div class="row__skill">
+                        <img class="skill_icon" src="./img/skills/icon-cypress.svg" alt="Cypress logo" />
+                        <p class="skill__title">Cypress</p>
+                    </div>
+
+                    <div class="row__skill">
+                        <img class="skill_icon" src="./img/skills/icon-storybook.svg" alt="Storybook logo" />
+                        <p class="skill__title">Storybook</p>
+                    </div>
+
+                    <div class="row__skill">
+                        <img class="skill_icon" src="./img/skills/icon-git.svg" alt="Git logo" />
+                        <p class="skill__title">Git</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section experience">
+        <div class="experience-container">
+            <div class="experience-info">
+                <div class="tag">
+                    <p class="tag__text">
+                        Experience
+                    </p>
+                </div>
+                <p class="experience-title">
+                    Here is a quick summary of my most recent experiences:
+                </p>
+            </div>
+            <div class="experience-history">
+
+                <!-- Experience card -->
+                <div class="experience-card">
+                    <img class="logo__upwork" src="./img/branding/logo-upwork.svg" alt="Upwork logo" />
+                    <p class="experience-date">
+                        Nov 2021 - Present
+                    </p>
+                    <div class="experience-card__info">
+                        <h3 class="experience-card__info--title">
+                            Sr. Frontend Developer
+                        </h3>
+                        <ul class="experience-card__info--list">
+                            <li class="experience-card__list--item">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </li>
+                            <li class="experience-card__list--item">
+                                Ut pretium arcu et massa semper, id fringilla leo semper.
+                            </li>
+                            <li class="experience-card__list--item">
+                                Sed quis justo ac magna.
+                            </li>
+                            <li class="experience-card__list--item">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience card -->
+                <div class="experience-card">
+                    <img class="logo__upwork" src="./img/branding/logo-upwork.svg" alt="Upwork logo" />
+                    <p class="experience-date">
+                        Jul 2017 - Oct 2021
+                    </p>
+                    <div class="experience-card__info">
+                        <h3 class="experience-card__info--title">
+                            Team Lead
+                        </h3>
+                        <ul class="experience-card__info--list">
+                            <li class="experience-card__list--item">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </li>
+                            <li class="experience-card__list--item">
+                                Ut pretium arcu et massa semper, id fringilla leo semper.
+                            </li>
+                            <li class="experience-card__list--item">
+                                Sed quis justo ac magna.
+                            </li>
+                            <li class="experience-card__list--item">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience card -->
+                <div class="experience-card">
+                    <img class="logo__upwork" src="./img/branding/logo-upwork.svg" alt="Upwork logo" />
+                    <p class="experience-date">
+                        Dec 2015 - May 2017
+                    </p>
+                    <div class="experience-card__info">
+                        <h3 class="experience-card__info--title">
+                            Full Stack Developer
+                        </h3>
+                        <ul class="experience-card__info--list">
+                            <li class="experience-card__list--item">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </li>
+                            <li class="experience-card__list--item">
+                                Ut pretium arcu et massa semper, id fringilla leo semper.
+                            </li>
+                            <li class="experience-card__list--item">
+                                Sed quis justo ac magna.
+                            </li>
+                            <li class="experience-card__list--item">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WORK -->
+    <section id="work" class="section work">
+        <div class="work-container">
+            <div class="work-info">
+                <div class="tag">
+                    <p class="tag__title">Work</p>
+                </div>
+                <p class="work-title">
+                    Some of the noteworthy projects I have built:
+                </p>
+            </div>
+
+            <!-- Work card -->
+            <div class="work-card">
+                <div class="work-img">
+                    <img class="work-img__picture" src="./img/work/work-pic.png" alt="Work showcase image" />
+                </div>
+                <div class="work-card__content">
+                    <h3 class="work-card__title">
+                        Fiskil
+                    </h3>
+                    <div class="work-card__para">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
+                    </div>
+                    <div class="work-technologies">
+                        <!-- Technologies/React -->
+                        <div class="tag">
+                            <div class="tag__title">React</div>
+                        </div>
+
+                        <!-- Technologies/Next.js -->
+                        <div class="tag">
+                            <div class="tag__title">Next.js</div>
+                        </div>
+
+                        <!-- Technologies/Typescript -->
+                        <div class="tag">
+                            <div class="tag__title">Typescript</div>
+                        </div>
+
+                        <!-- Technologies/Nest.js -->
+                        <div class="tag">
+                            <div class="tag__title">Nest.js</div>
+                        </div>
+
+                        <!-- Technologies/PostgreSQL -->
+                        <div class="tag">
+                            <div class="tag__title">PostgreSQL</div>
+                        </div>
+
+                        <!-- Technologies/TailwindCSS -->
+                        <div class="tag">
+                            <div class="tag__title">TailwindCSS</div>
+                        </div>
+
+                        <!-- Technologies/Figma -->
+                        <div class="tag">
+                            <div class="tag__title">Figma</div>
+                        </div>
+
+                        <!-- Technologies/Cypress -->
+                        <div class="tag">
+                            <div class="tag__title">Cypress</div>
+                        </div>
+
+                        <!-- Technologies/Storybook -->
+                        <div class="tag">
+                            <div class="tag__title">Storybook</div>
+                        </div>
+
+                        <!-- Technologies/Git -->
+                        <div class="tag">
+                            <div class="tag__title">Git</div>
+                        </div>
+                    </div>
+                    <img class="icon-open" src="./img/work/open-icon.svg" alt="Open project" />
+                </div>
+            </div>
+
+            <!-- Work card -->
+            <div class="work-card">
+                <div class="work-img">
+                    <img class="work-img__picture" src="./img/work/work-pic.png" alt="Work showcase image" />
+                </div>
+                <div class="work-card__content">
+                    <h3 class="work-card__title">
+                        Fiskil
+                    </h3>
+                    <div class="work-card__para">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
+                    </div>
+                    <div class="work-technologies">
+                        <!-- Technologies/React -->
+                        <div class="tag">
+                            <div class="tag__title">React</div>
+                        </div>
+
+                        <!-- Technologies/Next.js -->
+                        <div class="tag">
+                            <div class="tag__title">Next.js</div>
+                        </div>
+
+                        <!-- Technologies/Typescript -->
+                        <div class="tag">
+                            <div class="tag__title">Typescript</div>
+                        </div>
+
+                        <!-- Technologies/Nest.js -->
+                        <div class="tag">
+                            <div class="tag__title">Nest.js</div>
+                        </div>
+
+                        <!-- Technologies/PostgreSQL -->
+                        <div class="tag">
+                            <div class="tag__title">PostgreSQL</div>
+                        </div>
+
+                        <!-- Technologies/TailwindCSS -->
+                        <div class="tag">
+                            <div class="tag__title">TailwindCSS</div>
+                        </div>
+
+                        <!-- Technologies/Figma -->
+                        <div class="tag">
+                            <div class="tag__title">Figma</div>
+                        </div>
+
+                        <!-- Technologies/Cypress -->
+                        <div class="tag">
+                            <div class="tag__title">Cypress</div>
+                        </div>
+
+                        <!-- Technologies/Storybook -->
+                        <div class="tag">
+                            <div class="tag__title">Storybook</div>
+                        </div>
+
+                        <!-- Technologies/Git -->
+                        <div class="tag">
+                            <div class="tag__title">Git</div>
+                        </div>
+                    </div>
+                    <img class="icon-open" src="./img/work/open-icon.svg" alt="Open project" />
+                </div>
+            </div>
+
+            <!-- Work card -->
+                <div class="work-card">
+                    <div class="work-img">
+                        <img class="work-img__picture" src="./img/work/work-pic.png" alt="Work showcase image" />
+                    </div>
+                    <div class="work-card__content">
+                        <h3 class="work-card__title">
+                            Fiskil
+                        </h3>
+                        <div class="work-card__para">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
+                        </div>
+                        <div class="work-technologies">
+                            <!-- Technologies/React -->
+                            <div class="tag">
+                                <div class="tag__title">React</div>
+                            </div>
+
+                            <!-- Technologies/Next.js -->
+                            <div class="tag">
+                                <div class="tag__title">Next.js</div>
+                            </div>
+
+                            <!-- Technologies/Typescript -->
+                            <div class="tag">
+                                <div class="tag__title">Typescript</div>
+                            </div>
+
+                            <!-- Technologies/Nest.js -->
+                            <div class="tag">
+                                <div class="tag__title">Nest.js</div>
+                            </div>
+
+                            <!-- Technologies/PostgreSQL -->
+                            <div class="tag">
+                                <div class="tag__title">PostgreSQL</div>
+                            </div>
+
+                            <!-- Technologies/TailwindCSS -->
+                            <div class="tag">
+                                <div class="tag__title">TailwindCSS</div>
+                            </div>
+
+                            <!-- Technologies/Figma -->
+                            <div class="tag">
+                                <div class="tag__title">Figma</div>
+                            </div>
+
+                            <!-- Technologies/Cypress -->
+                            <div class="tag">
+                                <div class="tag__title">Cypress</div>
+                            </div>
+
+                            <!-- Technologies/Storybook -->
+                            <div class="tag">
+                                <div class="tag__title">Storybook</div>
+                            </div>
+
+                            <!-- Technologies/Git -->
+                            <div class="tag">
+                                <div class="tag__title">Git</div>
+                            </div>
+                        </div>
+                        <img class="icon-open" src="./img/work/open-icon.svg" alt="Open project" />
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="section testimonials">
+        <div class="testimonials-container">
+            <div class="testimonials-info">
+                <div class="tag">
+                    <p class="tag__title">
+                        Testimonials
+                    </p>
+                </div>
+                <p class="testimonials__para">
+                    Nice things people have said about me:
+                </p>
+            </div>
+            <div class="testimonials__cards--wrapper">
+
+                <!-- Testimonial/Card -->
+                <div class="testimonial__card">
+
+                    <img
+                    class="testimonial__card--avatar" 
+                    src="./img/testimonials/icon-testimonial-person.png" 
+                    alt="Testimonial person placeholder image" 
+                    />
+
+                    <p class="testimonial__card--review">
+                        “Job well done! I am really impressed. He is very very good at what he does:) I would recommend Adrian and will rehire in the future for Frontend development.”
+                    </p>
+                    <div class="testimonial__card--info">
+                        <h3 class="testimonial__card--name">
+                            John Doe
+                        </h3>
+                        <p class="testimonial__card--position">
+                            Founder - xyz.com
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Testimonial/Card -->
+                <div class="testimonial__card">
+
+                    <img
+                    class="testimonial__card--avatar" 
+                    src="./img/testimonials/icon-testimonial-person.png" 
+                    alt="Testimonial person placeholder image" 
+                    />
+
+                    <p class="testimonial__card--review">
+                        “Great guy, highly recommended for any COMPLEX front-end development job! His skills are top-notch and he will be an amazing addition to any team.”
+                    </p>
+                    <div class="testimonial__card--info">
+                        <h3 class="testimonial__card--name">
+                            John Doe
+                        </h3>
+                        <p class="testimonial__card--position">
+                            Founder - abc.com
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Testimonial/Card -->
+                <div class="testimonial__card">
+
+                    <img
+                    class="testimonial__card--avatar" 
+                    src="./img/testimonials/icon-testimonial-person.png" 
+                    alt="Testimonial person placeholder image" 
+                    />
+
+                    <p class="testimonial__card--review">
+                        “Great guy, highly recommended for any COMPLEX front-end development job! His skills are top-notch and he will be an amazing addition to any team.”
+                    </p>
+                    <div class="testimonial__card--info">
+                        <h3 class="testimonial__card--name">
+                            John Doe
+                        </h3>
+                        <p class="testimonial__card--position">
+                            Freelancer
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="tag">
+                    <p class="tag__title">
+                        Get in touch
+                    </p>
+                </div>
+                <p class="contact__body">
+                    What’s next? Feel free to reach out to me if you're looking for a developer, have a query, or simply want to connect.
+                </p>
+            </div>
+            <div class="contact-details">
+                <div class="contact-details__detail contact-details__email">
+                    <i class="far fa-envelope"></i>
+                    <p class="contact__email">
+                        atoficial2016@gmail.com
+                    </p>
+                    <i class="far fa-copy"></i>
+                </div>
+                <div class="contact-details__detail contact-details__phone">
+                    <i class="fas fa-phone"></i>
+                    <p class="contact__phone">
+                        +34 627 097 554
+                    </p>
+                    <i class="far fa-copy"></i>
+                </div>
+            </div>
+            <div class="contact-platforms">
+                <p class="contact-platforms__para">
+                    You may also find me on these platforms!
+                </p>
+                <div class="other-platforms">
+                    <a class="contact-platform social-platform" href="https://github.com/adrianthoenig/" target="_blank"><i class="fab fa-github"></i></a>
+                    <a class="contact-platform social-platform" href="https://instagram.com/at.unlocked/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a class="contact-platform social-platform" href="https://www.figma.com/@adrianthoenig" target="_blank"><i class="fab fa-figma"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <i class="fas fa-copyright"></i>
+            <p class="footer__copyright-text">
+                2026 | Designed and coded with ❤️️ and ☕️ by Adrian Thoenig
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
